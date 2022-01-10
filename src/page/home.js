@@ -33,7 +33,7 @@ const HomePage = {
         </div>
       </div>
       <h2 class="uppercase text-lg font-bold my-4">Hoạt động sinh viên</h2>
-      <div class="grid grid-cols-3 gap-8 ">
+      <div class="grid grid-cols-3 gap-8 mb-4">
         <div class="border border-gray-400 p-4 ">
           <a href=""><img src="https://caodang.fpt.edu.vn/wp-content/uploads/IMG_1336.jpg" class="mx-auto" alt=""></a>
           <a href="">
