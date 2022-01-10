@@ -8,7 +8,7 @@ const HomePage = {
       <h2 class="uppercase text-lg font-bold my-4">Tin tức học tập</h2>
       <div class="grid grid-cols-3 gap-8 ">
         <div class="border border-gray-400 p-4 ">
-          <a href=""><img src="./img/img1.jfif" class="mx-auto" alt=""></a>
+          <a href=""><img src="../.img/img1.jfif" class="mx-auto" alt=""></a>
           <a href="">
             <h3 class="text-base text-red-600 font-bold my-2 ml-3">Vinh danh 295 sinh viên FPT Polytechnic học kỳ Spring 2018</h3>
           </a>
