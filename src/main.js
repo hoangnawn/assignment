@@ -1,9 +1,9 @@
 import Navigo from "navigo";
-import AboutPage from "./page/about";
 import HomePage from "./page/home";
-import ProductPage from "./page/product";
 import DetailNewsPage from "./page/detailNews";
 import News from "./components/news";
+import Signup from "./page/signup";
+import SignIn from "./page/signin";
 
 
 const router =  new Navigo("/", {linksSelector : "a"});
@@ -18,8 +18,11 @@ router.on({
   "/news": () =>{
       print(News.render());
   },
-  "/product": () =>{
-      print(ProductPage.render());
+  "/signup": () =>{
+    print(Signup.render());
+  },
+  "signin": () =>{
+    print(SignIn.render());
   },
   "/news/:id": (value) => {
     console.log(value.data.id);
