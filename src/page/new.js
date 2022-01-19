@@ -1,3 +1,6 @@
+import footer from "../footer";
+import header from "../header";
+
 const New = {
     render() {
         return /* html */`
@@ -56,7 +59,8 @@ const New = {
             Cao đẳng FPT Polytechnic Đà Nẵng thường xuyên tổ chức cho sinh viên tham quan các đơn vị doanh nghiệp</p>
         </div>
       </div>
-    </main>`;
+    </main>
+    `;
     },
 };
 export default New;

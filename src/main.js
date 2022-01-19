@@ -7,7 +7,7 @@ import SignIn from "./page/signin";
 import admin from "./page/admin/dashboard";
 import adminNew from "./page/admin/news";
 import add from "./page/admin/news/add";
-import edit from "./page/admin/news/edit";
+import NewsEdit from "./page/admin/news/edit";
 
 
 
@@ -37,13 +37,13 @@ router.on({
   "/admin/news/add": () =>{
     print(add.render());
   },
-  "/admin/news/:id/edit": () =>{
-    console.log(value.data.id);
-    print(edit.render(value.data.id));
-  },
+  "/admin/news/:id/edit": ({ data }) => {
+    const { id } = data;
+    print(NewsEdit.render(+id));
+},
   "/news/:id": (value) => {
-    console.log(value.data.id);
-    print(DetailNewsPage.render(value.data.id));
+    const { id } = data;
+    print(DetailNewsPage.render(+id));
 },
 
 });
