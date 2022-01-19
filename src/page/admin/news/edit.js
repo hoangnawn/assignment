@@ -1,7 +1,9 @@
+import data from "../../../data";
 import navAdmin from "../navAdmin";
 
 const edit = {
     render(id){
+      const result = data.find((post) => post.id === id);
         return /*html */ `
         ${navAdmin.render()}
           <div class="md:grid md:grid-cols-3 md:gap-6">
@@ -20,7 +22,7 @@ const edit = {
                           Tiêu đề
                         </label>
                         <div class="mt-1 flex rounded-md shadow-sm">
-                          <input type="text" name="title" id="title"  class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" value="">
+                          <input type="text" name="title" id="title"  class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" value="${result.title}">
                         </div>
                       </div>
                     </div>
@@ -30,7 +32,7 @@ const edit = {
                           Giá
                         </label>
                         <div class="mt-1 flex rounded-md shadow-sm">
-                          <input type="text" name="price" id="price" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Giá">
+                          <input type="text" name="price" id="price" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" value="${result.price}">
                         </div>
                       </div>
 
@@ -39,7 +41,7 @@ const edit = {
                         Mô tả
                       </label>
                       <div class="mt-1">
-                        <textarea id="about" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder="Mô tả"></textarea>
+                        <textarea id="about" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"">${result.desc}</textarea>
                       </div>
                     </div>
 
