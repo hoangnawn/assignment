@@ -37,13 +37,12 @@ router.on({
   "/admin/news/add": () =>{
     print(add.render());
   },
-  "/admin/news/:id/edit": ({ data }) => {
-    const { id } = data;
-    print(NewsEdit.render(+id));
+  "/admin/news/:id/edit": (value) => {
+    print(NewsEdit.render(value.data.id));
+
 },
-  "/news/:id": (data) => {
-    const { id } = data;
-    print(DetailNewsPage.render(+id));
+  "/news/:id": (value) => {
+    print(DetailNewsPage.render(value.data.id));
 },
 
 });
