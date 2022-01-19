@@ -41,7 +41,7 @@ router.on({
     const { id } = data;
     print(NewsEdit.render(+id));
 },
-  "/news/:id": (value) => {
+  "/news/:id": (data) => {
     const { id } = data;
     print(DetailNewsPage.render(+id));
 },
