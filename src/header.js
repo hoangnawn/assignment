@@ -3,7 +3,7 @@ const header = {
         return /* html */ `
         <header>
       <div class="bg-blue-900 py-5">
-        <a href=""><img src="./img/FPT_Polytechnic.png" width="250px" class="mx-auto" alt=""></a>
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/FPT_Polytechnic.png/1200px-FPT_Polytechnic.png" width="250px" class="mx-auto" alt=""></a>
       </div>
       <div class="bg-orange-500 py-4 mb-4">
         <ul class="flex px-2">
